@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        />
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:background="#e6e6e6"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/recyclerView"
+        >
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="المجموع الكلي :"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/textViewTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:singleLine="false"
+            android:text="40 ريال"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relativeLayout2"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/buttonConfirmOrder"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:text="تنفيذ الطلب"
+
+            android:textAllCaps="false"
+            android:theme="@style/MyButton2"/>
+        <Button
+            android:id="@+id/buttonAddMore"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:text="اضافة المزيد"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:theme="@style/MyButton1"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

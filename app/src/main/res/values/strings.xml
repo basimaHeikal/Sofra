@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Sofra</string>
+
+
+    <!-- Strings for splash activity -->
+    <string name="splashText1">التطبيق الأول لبيع و طلب الطعام المنزلي</string>
+    <string name="splashButtonOrder">طلب طعام</string>
+    <string name="splashButtonSell">بيع طعام</string>
+    <string name="splashText2">جميع الجقوق محفوظه لتطبيق سفره 2018</string>
+
+    <!-- Strings for Login activity -->
+    <string name="LoginText1">تسجيل الدخول</string>
+    <string name="LoginText2">تفضل بتسجيل الدخول</string>
+    <string name="LoginText3">نسيت كلمة المرور ؟</string>
+    <string name="LoginButtonLogin">تسجيل الدخول</string>
+    <string name="LoginButtonSignUp">إنشاء حساب جديد</string>
+    <string name="LoginEditTextEmail">البريد الإلكتروني</string>
+    <string name="LoginEditTextPassword">كلمة المرور</string>
+
+    <!-- Strings for SignUpOrder activity -->
+    <string name="SignUpTextSignUp">إنشاء حساب جديد</string>
+    <string name="SignUpEditTextName">اللإسم</string>
+    <string name="SignUpEditTextPhone">الجوال</string>
+    <string name="SignUpEditTextCity">المدينة</string>
+    <string name="SignUpEditTextCity1">الحي</string>
+    <string name="SignUpEditTextPlace">وصف المكان</string>
+    <string name="SignUpEditRewritePassword">إعادة كلمة المرور</string>
+    <string name="SignUpButtonNext">التالي</string>
+
+    <!-- Strings for SignUpSell activity -->
+    <string name="SignUpSellEditTextRestaurantName">إسم المتجر</string>
+    <string name="SignUpSellOrdersDelivery">الطلبات و التوصيل</string>
+    <string name="SignUpSellEditTextOrdersTime">وقت تسليم الطلبات</string>
+    <string name="SignUpSellContactInformation">بيانات التواصل</string>
+    <string name="SignUpSellEditTextWhatsApp">الواتس آب</string>
+    <string name="SignUpSellRestaurantPhoto">صورة المتجر</string>
+    <string name="SignUpSellButtonNext">متابعه</string>
+    <string name="SignUpSellButtonRegister">تسجيل</string>
+
+
+    <!-- Strings for foodOrder activity -->
+    <string name="foodOrder">طلب طعام</string>
+    <string name="foodOrderChooseCity">اختر المدينه...</string>
+    <string name="foodOrderSearch">البجث...</string>
+    <string name="foodOrderText1">الحد الأدنى للطلب :  </string>
+    <string name="foodOrderText2"> رسوم التوصيل :</string>
+    <string name="foodOrderText3"> مدة تجهيز الطلب :</string>
+
+    <!-- Strings for foodMenu Order activity -->
+    <string name="foodMenu">قائمة الطعام</string>
+    <string name="foodMenuTabReviews">التعليقات و التقيم</string>
+    <string name="foodMenuTabInformation">معلومات المتجر</string>
+    <string name="foodMenuPrice">السعر :</string>
+    <string name="foodMenuPriceUnit">ريال</string>
+    <string name="foodMenuText1">طريقة التوصيل</string>
+
+    <!-- Strings for foodMenu Order activity -->
+    <string name="foodMenuOrderEdit">تعديل</string>
+
+    <!-- Strings for foodMenuElement activity -->
+    <string name="foodMenuElementText1">دقيقة</string>
+    <string name="foodMenuElementText2">طلب خاص</string>
+    <string name="foodMenuElementText3"> الكميه :</string>
+    <string name="foodMenuElementButtonAdd">أضف إالى السلة</string>
+
+    <!-- Strings for OrdersCart activity -->
+    <string name="OrdersCartTextOrdersCart">سلة الطلبات</string>
+    <string name="OrdersCartText1">الإجمالي</string>
+    <string name="OrdersCartText2">المجموع الكلي</string>
+    <string name="OrdersCartButtonApplyOrder">تنفيذ الطلب</string>
+    <string name="OrdersCartButtonAddMore">إضافة المزيد</string>
+
+    <!-- Strings for OrdersDetails activity -->
+    <string name="OrdersDetailsTextOrdersDetails">تفاصيل الطلب</string>
+    <string name="OrdersDetailsText3">إضافة ملاحظات</string>
+    <string name="OrdersDetailsText4">عنوان التوصيل</string>
+    <string name="OrdersDetailsText5">الدفع</string>
+    <string name="OrdersDetailsText6">المجموع</string>
+    <string name="OrdersDetailsText7">رسوم التوصيل</string>
+    <string name="OrdersDetailsText8">المبلغ الإجمالي</string>
+    <string name="OrdersDetailsButtonBuy">إتمام الشراء</string>
+
+    <!-- Strings for Reviews activity -->
+    <string name="ReviewsText1">يسعدنا مشاركتك بتعليق أو تقييم</string>
+    <string name="OrdersDetailsButtonAddReview">أضف تقييم أو تعليق</string>
+
+    <!-- Strings for RestaurantInformation activity -->
+    <string name="RestaurantInformationText1">الحالة</string>
+    <string name="RestaurantInformationText2">وقت الطلبات</string>
+    <string name="RestaurantInformationText3">الحد الأدنى</string>
+
+    <!-- Strings for Navigation Drawer Order -->
+    <string name="NavigationOrderText1">مرحباً بك..</string>
+    <string name="NavigationHome">الصفحه الرئيسيه</string>
+    <string name="NavigationOrderMyOrders">طلباتي</string>
+    <string name="NavigationOrderAlarms">التنبيهات</string>
+    <string name="NavigationOrderLatestOffers">جديد العروض</string>
+    <string name="NavigationAboutApp">عن التطبيق</string>
+    <string name="NavigationRules">الشروط و الأحكام</string>
+    <string name="NavigationShareApp">شارك التطبيق</string>
+    <string name="NavigationContactUs">تواصل معنا</string>
+
+    <!-- Strings for MyOrders Activity -->
+    <string name="CurrentOrders">طلبات حاليه</string>
+    <string name="OldOrders">طلبات سابقه</string>
+    <string name="Order"> الطلب :</string>
+    <string name="OrderNumber">رقم الطلب :</string>
+    <string name="MyOrdersButtonOrderDone">تم تنفيذ الطلب</string>
+
+    <!-- Strings for ContactUs Activity -->
+    <string name="ContactUsComplaint">شكوى</string>
+    <string name="ContactUsSuggestions">إقتراح</string>
+    <string name="ContactUsEnquiry">إستعلام</string>
+    <string name="ContactUsFullName">الإسم كاملا..</string>
+    <string name="ContactUsEmail">البريد الإلكتروني..</string>
+    <string name="ContactUsPhoneNumber">الجوال..</string>
+    <string name="ButtonOrderSend">إرسال</string>
+
+    <!-- Strings for Navigation Drawer Sell -->
+    <string name="NavigationSellMyProducts">منتجاتي</string>
+    <string name="NavigationSellOrders">الطلبات المقدمه</string>
+    <string name="NavigationSellTips">العموله</string>
+    <string name="NavigationSellMyOffers">عروضي</string>
+
+    <!-- Strings for MyProducts Activity -->
+    <string name="ButtonAddNewProduct">إرسال</string>
+
+    <!-- Strings for AddProduct Activity -->
+    <string name="ButtonAdd">أضف</string>
+    <string name="AddProductPhoto">إضافة صورة للمنتج</string>
+
+    <!-- Strings for Orders Activity -->
+    <string name="NewOrders">طلبات جديده</string>
+    <string name="Client">العميل</string>
+    <string name="DateAndTime">تاريخ التسليم :</string>
+    <string name="Address"> العنوان :</string>
+    <string name="ButtonAccept">قبول</string>
+    <string name="ButtonReject">رفض</string>
+    <string name="ButtonDone">تم التسليم</string>
+    <string name="OrderIsDone">تم تنفيذ الطلب في</string>
+
+    <!-- Strings for Tips Activity -->
+    <string name="TipsText1">يرجى تحويل من الربح المباع في مده أقصاها شهر علما بأن جميع الطلبات ستكون مسجله على حسابك الشخصي</string>
+    <string name="TipsText2">دخل شيف سفرة</string>
+    <string name="TipsText3">عمولة التطبيق</string>
+    <string name="TipsText4">الراجحي : 2634283244</string>
+    <string name="TipsText5">الأهلي : 2634283244</string>
+    <string name="TipsText6">بإسم مؤسسه سفرة</string>
+
+    <!-- Strings for MyOffers Activity -->
+    <string name="AddNewOffer">أضف عرض جديد</string>
+
+    <!-- Strings for AddOffer Activity -->
+    <string name="AddOffer">أضف عرض</string>
+    <string name="ButtonAddOfferPhoto">أضف صوره للعرض</string>
+
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">الفلور هو عنصر كيميائي رمزه F وعدده الذرّي 9، ويكون على هيئة غاز ثنائي الذرة F2 له لون أصفر شاحب في الظروف القياسيّة من الضغط ودرجة الحرارة، وهو غاز سام ذو تأثير سلبي على الكائنات الحيّة. يقع عنصر الفلور على رأس مجموعة الهالوجينات في الجدول الدوري، وهو ذو نشاط كيميائي كبير، إذ أنّه أكثر عناصر الجدول الدوري كهرسلبية، ويشكّل مركّبات كيميائية مع أغلبها، حتى مع بعض الغازات النبيلة؛ وتسمّى أملاح عنصر الفلور باسم الفلوريدات.
+
+يقع عنصر الفلور في المرتبة 13 من بين العناصر الكيميائية بالنسبة لوفرته في كوكب الأرض، وفي المرتبة 24 بالنسبة لوفرته في الكون. يعدّ معدن الفلوريت مصدر التعدين الأساسي للفلور، إذ يستحصل عليه من خلال عملية التحليل الكهربائي؛ ومن المعادن الحاوية على عنصر الفلور أيضاً معدن الكريوليت النادر، والذي يستخدم في علم الفلزات كصهيرة من أجل تخفيض نقطة انصهار الفلزّات أثناء التعدين. يستطيع الفلور تشكيل عدد كبير من الفلوريدات اللاعضوية والعضوية، والتي لها العديد من التطبيقات الصناعية المهمّة.
+
+تعتبر الفلوريدات العضوية من المواد الثابتة ضد التحلّل الحيوي لذلك تصنّف ضمن الغازات الدفيئة التي تسبّب الاحتباس الحراري. بالمقابل يفيد أيون الفلوريد في مقاومة نخر الأسنان، لذلك يضاف بكمّيّات قليلة إلى تركيب معاجين الأسنان بالإضافة إلى ملح الطعام وماء الشرب في بعض البلدان.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spinner_title">Select Category</string>
+
+</resources>

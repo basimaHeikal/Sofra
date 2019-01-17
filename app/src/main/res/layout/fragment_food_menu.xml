@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestaurant"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/textViewRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewRestaurantType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRestaurantName"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/textViewLow"
+                android:inputType="textMultiLine"
+
+                />
+            <RatingBar
+                android:layout_below="@+id/textViewRestaurantType"
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.01"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:isIndicator="true"
+                style= "@style/CustomRatingBar"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:layout_marginBottom="-26dp"
+                android:layout_marginRight="-70dp"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableRight="@mipmap/open"
+                />
+            <TextView
+                android:id="@+id/textViewLowValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewState"
+                android:singleLine="false"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodOrderText1"
+                android:layout_below="@+id/textViewState"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/textViewLowValue"
+                />
+            <TextView
+                android:id="@+id/textViewDeliveryValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewLowValue"
+                android:layout_marginTop="5dp"
+                android:singleLine="false"
+
+                />
+            <TextView
+                android:id="@+id/textViewDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodOrderText2"
+                android:layout_below="@+id/textViewLowValue"
+                android:layout_toRightOf="@+id/textViewDeliveryValue"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!-- our tablayout to display tabs  -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/colorBlack"
+        app:tabSelectedTextColor="@color/colorBlack"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- View pager to swipe views -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

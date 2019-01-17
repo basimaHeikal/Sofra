@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical">
+        <!--product or offer name editText-->
+        <EditText
+            android:id="@+id/editUserName"
+            android:textAlignment="textStart"
+            android:hint="الإسم كاملا..."
+            android:inputType="textMultiLine"
+            style="@style/Sign_EditTextStyle"
+            />
+        <!--price editText-->
+        <EditText
+            android:id="@+id/editEmail"
+            android:hint="البريد الإالكتروني.."
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/editUserName"
+            style="@style/Sign_EditTextStyle"
+            android:textAlignment="textStart"
+            />
+
+        <!--product time editText-->
+        <EditText
+            android:id="@+id/editPhone"
+            android:textAlignment="textStart"
+            android:hint="الجوال.."
+            android:layout_below="@+id/editEmail"
+            style="@style/Sign_EditTextStyle"
+            android:inputType="numberDecimal"
+            />
+        <!--Product or offer describe Linear Layout-->
+        <LinearLayout
+            android:id="@+id/LinearDescribe"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/background_for_search_home"
+            android:layout_below="@+id/editPhone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            >
+            <EditText
+                android:id="@+id/editDescribe"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#00000000"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/colorRegister"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearDescribe"
+            android:text="ارسال"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:theme="@style/MyButton2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/buttonSend"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/textViewPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تابعنا على :"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="16dp"
+                android:src="@mipmap/instgram"
+                app:civ_border_color="#FAFAFA"
+                app:civ_border_width="0dp"
+                android:layout_weight="1"
+                />
+            <!-- Twitter image-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewTwiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:src="@mipmap/twiter"
+                app:civ_border_color="#FAFAFA"
+                app:civ_border_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:src="@mipmap/twiter"
+                app:civ_border_color="#FAFAFA"
+                app:civ_border_width="0dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

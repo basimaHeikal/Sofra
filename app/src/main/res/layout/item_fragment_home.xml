@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestaurant"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/textViewRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:text="تاج الفطيره الدمشقيه"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewRestaurantType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRestaurantName"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_toRightOf="@+id/textViewLow"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="برجر سندوتشات حاجه سقعه"
+                android:textSize="10sp"
+                />
+
+            <RatingBar
+                android:layout_below="@+id/textViewRestaurantType"
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.01"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:isIndicator="true"
+                style= "@style/CustomRatingBar"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:layout_marginBottom="-26dp"
+                android:layout_marginRight="-70dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/textViewState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مفتوح الآن"
+                android:layout_alignParentLeft="true"
+                android:drawableRight="@mipmap/open"
+                />
+            <TextView
+                android:id="@+id/textViewLowValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 ريال"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewState"
+                android:singleLine="false"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodOrderText1"
+                android:layout_below="@+id/textViewState"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/textViewLowValue"
+                />
+            <TextView
+                android:id="@+id/textViewDeliveryValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 ريال"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewLowValue"
+                android:layout_marginTop="5dp"
+                android:singleLine="false"
+
+                />
+            <TextView
+                android:id="@+id/textViewDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodOrderText2"
+                android:layout_below="@+id/textViewLowValue"
+                android:layout_toRightOf="@+id/textViewDeliveryValue"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/textViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestaurant"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/textViewSandwichName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:text="ساندوتش برجر تركي"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewSandwichDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="محلات الفطيره الفطيره الفطيره الفطيره الدمشقيه"
+                android:textSize="14sp"
+                android:singleLine="false"
+                android:textColor="#6e6e6e"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_below="@+id/textViewSandwichName"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewSandwichPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السعر"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewSandwichPriceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 ريال"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewSandwichPrice"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

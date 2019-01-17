@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1C40F</color>
+    <color name="colorPrimaryDark">#F1C40F</color>
+    <color name="colorAccent">#F1C40F</color>
+
+    <color name="teal_100">#b2dfdb</color>
+    <color name="colorBlack">#000</color>
+
+    <color name="colorForButton">#208f85</color>
+
+    <color name="colorForButton1">#FFA000</color>
+    <color name="colorHome">#ffffff</color>
+    <color name="colorWhite">#FAFAFA</color>
+    <color name="colorNotes">#393939</color>
+    <color name="colorRegister">#888888</color>
+    <color name="colorRegisterHints">#5e6266</color>
+    <color name="colorEditText">#00000000</color>
+    <color name="colorEditStart">#43A047</color>
+    <color name="colorPowerOff">#666666</color>
+    <color name="colorPowerOn">#43A047</color>
+</resources>

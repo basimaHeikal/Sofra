@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/textViewSandwichName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewRestaurant"
+                android:layout_alignParentRight="true"
+                android:text="ساندوتش برجر تركي"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewSandwichDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="محلات الفطيره الفطيره الفطيره الفطيره الدمشقيه"
+                android:textSize="14sp"
+                android:singleLine="false"
+                android:textColor="#6e6e6e"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewSandwichName"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewSandwichPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السعر"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/imageViewRestaurant"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewSandwichPriceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewSandwichPrice"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewPreparingTime"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="مدة تجهيز الطلب :"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewPreparingTimeValue"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:singleLine="false"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/textViewInfo"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+        <TextView
+            android:id="@+id/textViewInfoValue1"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:text="طلب خاص"
+            android:textSize="16sp"
+            android:singleLine="false"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+           android:layout_alignParentRight="true"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:background="@drawable/background_with_shadow1"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/textViewInfoValue1"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="الكميه"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonDecrease"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/decrease"
+            android:background="@color/colorPowerOn"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/textViewQuantity"
+            />
+        <EditText
+            android:id="@+id/editTextQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:background="@drawable/background_with_shadow1"
+            android:hint="1"
+            android:textSize="12dp"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:inputType="textMultiLine"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="center"
+            android:layout_toLeftOf="@+id/imageButtonDecrease"
+            android:layout_toRightOf="@+id/imageButtonIecrease"
+
+            />
+        <ImageButton
+            android:id="@+id/imageButtonIecrease"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/increase"
+            android:background="@color/colorPowerOn"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewRestaurantName"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_bg_rounded_corners2"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/cart"
+            />
+        <TextView
+            android:id="@+id/image_button_2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أضف إلى السله"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewPhotoUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>
+</ScrollView>

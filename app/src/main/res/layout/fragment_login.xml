@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical">
+
+        <RelativeLayout
+            android:id="@+id/image_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textViewRestaurantName"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+
+
+            <ImageView
+                android:id="@+id/imageViewLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/login_man"
+                />
+            <TextView
+                android:id="@+id/image_button_2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageViewLogin"
+                android:text="تفضل بتسجيل الدخول"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_marginRight="1dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <!--old Password Linear Layout-->
+        <LinearLayout
+            android:id="@+id/oldpassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/background_for_search_home"
+            android:layout_below="@+id/image_button_2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+           >
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#00000000"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:padding="10dp"
+                android:hint="البريد الإلكتروني"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorRegister"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <!--new Password Linear Layout-->
+        <LinearLayout
+            android:id="@+id/newpassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/background_for_search_home"
+            android:layout_below="@+id/oldpassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+          >
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textAlignment="textEnd"
+                android:background="#00000000"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword|textMultiLine"
+                android:textColorHint="@color/colorRegister"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newpassword"
+            android:text="تسجيل الدخول"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:theme="@style/MyButton2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonLogin"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:autoLink="none"
+            android:layout_marginTop="10dp"
+            android:text="نسيت كلمة المرور ؟"
+            android:textColor="#0c13df"
+            android:textAlignment="center"
+            android:textStyle="bold"
+           />
+
+        <Button
+            android:id="@+id/buttonClientSign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:text="إنشاء حساب جديد"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:theme="@style/MyButton1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+</ScrollView>

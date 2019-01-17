@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical">
+        <!--product or offer name editText-->
+        <EditText
+                android:id="@+id/editProductOfferName"
+            android:textAlignment="textStart"
+                android:hint="اسم المنتج"
+                android:inputType="textMultiLine"
+                style="@style/Sign_EditTextStyle"
+            />
+        <!--Product or offer describe Linear Layout-->
+        <LinearLayout
+                android:id="@+id/editProductOfferDescribe"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/background_for_search_home"
+                android:layout_below="@+id/editProductOfferName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"
+              >
+                <EditText
+                    android:id="@+id/editDescribe"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="#00000000"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:hint="وصف مختصر"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/colorRegister"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        <!--price editText-->
+        <EditText
+                android:id="@+id/editPrice"
+                android:hint="السعر"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/editProductOfferDescribe"
+                style="@style/Sign_EditTextStyle"
+                android:textAlignment="textStart"
+            />
+        <!--product time editText-->
+        <EditText
+                android:id="@+id/editTime"
+                android:textAlignment="textStart"
+                android:hint="مدة تجهيز الطلب"
+                android:layout_below="@+id/editPrice"
+                style="@style/Sign_EditTextStyle"
+                android:inputType="numberDecimal"
+
+            />
+        <!--offer Linear Layout-->
+        <LinearLayout
+               android:id="@+id/offer_linear_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/editTime"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"
+               >
+
+                <TextView
+                    android:id="@+id/textViewStarting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="المده من .. "
+                    android:textColorHint="@color/colorRegister"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/calender_p"
+                    android:gravity="center"
+                    android:background="@drawable/background_for_search_home"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"                    />
+
+                <TextView
+                    android:id="@+id/textViewEnding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="المده الى .. "
+                    android:textColorHint="@color/colorRegister"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/calender_p"
+                    android:gravity="center"
+                    android:background="@drawable/background_for_search_home"
+                    android:layout_weight="1"
+
+                    android:layout_marginRight="5dp"                    />
+
+        </LinearLayout>
+        <!--product or offer add photo linear Layout-->
+        <LinearLayout
+                android:id="@+id/image_button_2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/offer_linear_layout"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="70dp"
+                android:layout_centerHorizontal="true">
+
+
+
+                <TextView
+                    android:id="@+id/textViewPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اضافة صوره للمنتج "
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewAddPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#eaeaea"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/product_photo"
+                    />
+
+            </LinearLayout>
+        <!--add product or offer button-->
+        <Button
+                android:id="@+id/buttonProductOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_button_2"
+                android:text="أضف"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:theme="@style/MyButton2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestaurant"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/textViewRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:text="تاج الفطيره الدمشقيه"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewOrderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السعر"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+
+                android:layout_below="@+id/textViewRestaurantName"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewPriceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سندوتش برجر تركي"
+                android:layout_toLeftOf="@+id/textViewOrderName"
+                android:layout_below="@+id/textViewRestaurantName"
+                />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="التوصيل"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_below="@+id/textViewPriceValue"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/textViewDeliveryCostValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_toLeftOf="@+id/textViewQuantity"
+                android:layout_below="@+id/textViewPriceValue"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الإجمالي :"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_below="@+id/textViewQuantity"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/textViewTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 ريال"
+                android:layout_toLeftOf="@+id/textViewPrice"
+                android:layout_below="@+id/textViewDeliveryCostValue"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewOrderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OrderNumber"
+                android:textColor="#FFA000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textViewOrderNumberValue"
+                />
+            <TextView
+                android:id="@+id/textViewOrderNumberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5646565"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#FFA000"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/image_button_2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textViewTotalValue"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearReject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/textViewRestaurantName"
+                    android:background="@drawable/button_call"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="رفض"
+                        android:textColor="#FFF"
+                        android:textSize="12sp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:drawableRight="@drawable/cancle"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/textViewRestaurantName"
+                    android:background="@drawable/button_accept"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="استلام"
+                        android:textColor="#FFF"
+                        android:textSize="12sp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:drawableRight="@mipmap/like"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

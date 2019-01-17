@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRestaurant"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/textViewOfferName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:text="gg"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="محلات الفطيره الدمشقيه"
+                android:textSize="14sp"
+                android:textColor="#6e6e6e"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_below="@+id/textViewOfferName"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewOfferTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ساري لفتره محدوده"
+                android:textSize="12sp"
+                android:textColor="#b6b6b6"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_below="@+id/textViewRestaurantName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewOfferTimeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ساري لفتره محدوده"
+                android:textSize="12sp"
+                android:textColor="#b6b6b6"
+                android:layout_toLeftOf="@+id/textViewOfferTime"
+                android:layout_below="@+id/textViewRestaurantName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/textViewOfferPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السعر حسب الطلب"
+                android:textSize="9sp"
+                android:textColor="#b6b6b6"
+                android:layout_toLeftOf="@+id/imageViewRestaurant"
+                android:layout_below="@+id/textViewOfferTime"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/NavigationHome"
+            android:icon="@mipmap/home"/>
+        <item
+            android:id="@+id/nav_my_orders"
+            android:title="@string/NavigationOrderMyOrders"
+            android:icon="@mipmap/my_orders"/>
+
+        <item
+            android:id="@+id/nav_alarms"
+            android:title="@string/NavigationOrderAlarms"
+            android:icon="@mipmap/alarms"/>
+        <item
+            android:id="@+id/nav_offers"
+            android:title="@string/NavigationOrderLatestOffers"
+            android:icon="@mipmap/offers"/>
+        <item
+            android:id="@+id/nav_about_app"
+            android:title="@string/NavigationAboutApp"
+            android:icon="@mipmap/about_app"/>
+        <item
+            android:id="@+id/nav_rules"
+            android:title="@string/NavigationRules"
+            android:icon="@mipmap/rules"/>
+
+        <item
+            android:id="@+id/nav_share_app"
+            android:title="@string/NavigationShareApp"
+            android:icon="@mipmap/share_app"/>
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:title="@string/NavigationContactUs"
+            android:icon="@mipmap/contact_us"
+            />
+
+        <item
+            android:id="@+id/nav_food_menu"
+            android:title="قائمة اللطعام"
+            android:visible="false"
+            android:icon="@mipmap/contact_us"
+            />
+        <item
+            android:id="@+id/nav_sandwich"
+            android:title="@string/NavigationContactUs"
+            android:visible="false"
+            android:icon="@mipmap/contact_us"
+            />
+        <item
+            android:id="@+id/nav_cart"
+            android:title="@string/NavigationContactUs"
+            android:visible="true"
+            android:icon="@mipmap/contact_us"
+            />
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/NavigationContactUs"
+            android:visible="false"
+            android:icon="@mipmap/contact_us"
+            />
+        <item
+            android:id="@+id/nav_sign"
+            android:title="@string/NavigationContactUs"
+            android:visible="false"
+            android:icon="@mipmap/contact_us"
+            />
+        <item
+            android:id="@+id/nav_order_details"
+            android:title="@string/NavigationContactUs"
+            android:visible="false"
+            android:icon="@mipmap/contact_us"
+            />
+        <item
+            android:id="@+id/nav_client_settings"
+            android:title="@string/NavigationContactUs"
+            android:visible="false"
+            android:icon="@mipmap/contact_us"
+            />
+    </group>
+
+
+
+</menu>

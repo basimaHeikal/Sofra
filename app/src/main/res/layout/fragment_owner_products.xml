@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/image_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewRestaurantName"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/add_product"
+            />
+        <TextView
+            android:id="@+id/image_button_2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أضف منتج جديد "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</RelativeLayout>
