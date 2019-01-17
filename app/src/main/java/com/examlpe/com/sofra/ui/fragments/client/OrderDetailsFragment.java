@@ -145,7 +145,7 @@ public class OrderDetailsFragment extends Fragment {
 
 
 //        new CallToast(getActivity(),id.toString()+quantity.toString()+note.toString()+phone+name+api_token+OrderNote);
-        new CallToast(getActivity(),paymentMethodId);
+//        new CallToast(getActivity(),paymentMethodId);
         final ProgressDialog pDialog = new ProgressDialog(getActivity());
         pDialog.setMessage("Ordering...");
         pDialog.show();
